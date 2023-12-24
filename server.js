@@ -11,7 +11,7 @@ app.use(express.static('public'));
 app.post('/ask', (req, res) => {
     const { message, public } = req.body;
     const date = new Date().toLocaleDateString('en-GB').split('/').join('.'); // Format date as dd.mm.yyyy
-    const publicTag = public ? '[PUBLIC]' : '';
+    const publicTag = public ? '' : '[PRIVATE]';
 
     const formattedMessage = `[${date}] ${publicTag}\n${message}\n\n`;
 
