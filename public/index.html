@@ -22,6 +22,12 @@
       <button type="submit">Send</button>
     </form>
     <hr/>
+    <p class="q">are you okay with your existing friends creating alts to talk to you?</p>
+    <p class="a">Yea sure. It would be a pretty cool new mode of interaction! </p>
+    <!--
+    <p class="q"> </p>
+    <p class="a"> </p>
+    -->
   </main>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Adamina&family=Montserrat&display=swap');
@@ -71,6 +77,20 @@
       margin: 2em 0;
       color: #aaa;
       border: 1px solid;
+    }
+
+    .q:before {
+      content: '>';
+    }
+
+    .q {
+      font-style: italic;
+    }
+
+    .a {
+      border-bottom: dashed #aaa 2px;
+      padding-bottom: 30px;
+      margin-bottom: 0;
     }
 
   </style>
